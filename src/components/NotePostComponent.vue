@@ -223,6 +223,9 @@
         })
       }
     },
+    beforeRouteLeave (to, from, next) {
+      this.$destroy();
+    },
     computed: {
       ...mapGetters([
         'currentAccessKey',
